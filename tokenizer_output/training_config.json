@@ -1,0 +1,18 @@
+{
+  "vocab_size_requested": 32000,
+  "vocab_size_actual": 32000,
+  "min_frequency": 2,
+  "special_tokens": [
+    "<unk>",
+    "<s>",
+    "</s>",
+    "<pad>"
+  ],
+  "pre_tokenizer": "ByteLevel",
+  "normalizer": "NFKC",
+  "model": "BPE",
+  "corpus_file": "/home/udbhav/Downloads/bpe-tokenizer-pipeline/corpus/en_wikipedia_corpus.txt",
+  "corpus_size_bytes": 104861711,
+  "training_seconds": 31.703600883483887,
+  "tokenizer_file": "/home/udbhav/Downloads/bpe-tokenizer-pipeline/tokenizer_output/tokenizer.json"
+}

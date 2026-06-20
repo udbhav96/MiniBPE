@@ -1,5 +1,4 @@
 corpus/
-tokenizer_output/
 dump_cache/
 *.bz2
 __pycache__/
