@@ -8,7 +8,7 @@
  * e.g. http://localhost:8000 for local dev or your deployed API origin.
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://your-render-app.onrender.com";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export interface TokenizeResult {
   tokens: string[];
