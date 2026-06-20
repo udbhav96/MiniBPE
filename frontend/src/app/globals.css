@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/*
+  FROST PALETTE
+  -------------
+  ink      — near-black background, the canvas everything sits on
+  paper    — primary text color, slightly warm off-white (not pure #fff,
+             easier on the eyes against ink at long reading lengths)
+  cyan     — primary accent: actions, the live token stream's "current" state
+  amber    — secondary accent: used ONLY for contrast in the token-chip
+             visualization, so adjacent tokens are visually distinguishable
+  slate    — muted text, borders, dividers
+  surface  — slightly-raised panel background, one step up from ink
+*/
+:root {
+  --color-ink: #0a0e12;
+  --color-surface: #11161c;
+  --color-surface-raised: #161d25;
+  --color-paper: #e8ecef;
+  --color-cyan: #22d3ee;
+  --color-cyan-dim: #0e7490;
+  --color-amber: #f59e0b;
+  --color-slate: #64748b;
+  --color-slate-dim: #3b4756;
+  --color-danger: #f87171;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-paper: var(--color-paper);
+  --color-cyan: var(--color-cyan);
+  --color-cyan-dim: var(--color-cyan-dim);
+  --color-amber: var(--color-amber);
+  --color-slate: var(--color-slate);
+  --color-slate-dim: var(--color-slate-dim);
+  --color-danger: var(--color-danger);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-data: var(--font-data);
+}
+
+* {
+  border-color: var(--color-slate-dim);
+}
+
+body {
+  background: var(--color-ink);
+}
+
+/* Visible keyboard focus everywhere — accessibility floor, never removed */
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Thin custom scrollbar, matches the Ink/Slate palette instead of OS default */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-dim);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate);
+}

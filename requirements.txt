@@ -1,0 +1,15 @@
+# --- Stage 1: Data extraction ---
+mwparserfromhell>=0.6.5
+datasets>=2.19.0          # used by both extract_wikipedia_fast.py and evaluation/benchmarks.py
+
+# --- Stage 2: BPE training ---
+tokenizers>=0.19.1
+
+# --- Stage 3: Evaluation ---
+# (datasets already covers benchmark loading; no extra deps)
+
+# --- API layer (serves the frontend) ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+transformers>=4.41.0      # only needed for the GPT-2 baseline comparison endpoint
+pydantic>=2.7.0

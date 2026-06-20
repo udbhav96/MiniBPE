@@ -1,0 +1,11 @@
+corpus/
+tokenizer_output/
+dump_cache/
+*.bz2
+__pycache__/
+*.pyc
+.MiniBPE/
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+.DS_Store
