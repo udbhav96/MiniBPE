@@ -162,11 +162,6 @@ Built with Next.js 16 (App Router) + TypeScript + Tailwind v4. Three views:
    `/compare` endpoint and shows token count delta + side-by-side chips.
 3. **Benchmark table** — renders `evaluation_report.json` from Stage 3.
 
-### Design system
 
-Carries forward a "Frost" palette: near-black ink background (`#0A0E12`),
-cyan primary accent (`#22D3EE`), amber secondary accent (`#F59E0B`) used only
-inside the token visualization for contrast, Space Grotesk for display type,
-Instrument Sans for body/UI, DM Mono for token ids and all numeric data.
 
 
