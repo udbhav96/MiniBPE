@@ -71,7 +71,7 @@ python data_extraction/extract_wikipedia.py --lang en --size-limit-mb 100 --out-
 # Stage 2 — train the tokenizer
 python tokenizer_training/train_bpe.py \
     --corpus ./corpus/en_wikipedia_corpus.txt \
-    --vocab-size 32000 --min-frequency 2 \
+    --vocab-size 50257 --min-frequency 2 \
     --out-dir ./tokenizer_output
 
 # Stage 3 — evaluate

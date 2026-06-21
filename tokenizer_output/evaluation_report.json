@@ -1,32 +1,32 @@
 {
-  "tokenizer_path": "/home/udbhav/Downloads/bpe-tokenizer-pipeline/tokenizer_output/tokenizer.json",
-  "vocab_size": 32000,
+  "tokenizer_path": "tokenizer_output/tokenizer.json",
+  "vocab_size": 50257,
   "benchmarks": {
     "wikitext-103": {
       "num_documents": 2000,
       "total_words": 175517,
-      "total_tokens": 207687,
+      "total_tokens": 201093,
       "total_chars": 931981,
       "total_bytes_utf8": 933452,
-      "tokens_per_word": 1.1833,
-      "compression_ratio_bytes_per_token": 4.4945,
-      "encode_seconds": 0.4989,
-      "decode_seconds": 0.0621,
-      "encode_chars_per_sec": 1868177.7,
-      "decode_chars_per_sec": 15000455.0
+      "tokens_per_word": 1.1457,
+      "compression_ratio_bytes_per_token": 4.6419,
+      "encode_seconds": 0.7314,
+      "decode_seconds": 0.0598,
+      "encode_chars_per_sec": 1274311.6,
+      "decode_chars_per_sec": 15576465.9
     },
     "ptb": {
       "num_documents": 2000,
       "total_words": 41757,
-      "total_tokens": 51116,
+      "total_tokens": 50181,
       "total_chars": 232925,
       "total_bytes_utf8": 232925,
-      "tokens_per_word": 1.2241,
-      "compression_ratio_bytes_per_token": 4.5568,
-      "encode_seconds": 0.1511,
-      "decode_seconds": 0.0102,
-      "encode_chars_per_sec": 1541506.0,
-      "decode_chars_per_sec": 22934442.9
+      "tokens_per_word": 1.2017,
+      "compression_ratio_bytes_per_token": 4.6417,
+      "encode_seconds": 0.2899,
+      "decode_seconds": 0.013,
+      "encode_chars_per_sec": 803591.6,
+      "decode_chars_per_sec": 17865547.1
     }
   }
 }
